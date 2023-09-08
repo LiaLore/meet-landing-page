@@ -36,22 +36,21 @@ body {
 .images-heroes {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 }
 
 .img1 {
-    clip-path: inset(0 0 0 20px);
-    margin: 0 5px 0 -20px;
+    clip-path: inset(0 0 0 3.5vw);
+    margin-left: -3.5vw;
+    width: 50vw;
 }
 
 .img2 {
-    clip-path: inset(0 20px 0 0);
-    margin: 0 -20px 0 5px;
+    clip-path: inset(0 3.5vw 0 0);
+    margin-right: -3.5vw;
+    width: 50vw;
 }
 
-.images-heroes>img {
-    width: 199px;
-    height: 153px;
-}
 
 .head-text {
     font-size: 40px;
@@ -59,8 +58,7 @@ body {
     line-height: 44px;
     letter-spacing: 0px;
     text-align: center;
-    width: 327px;
-    height: 88px;
+    width: 55vw;
     margin: 20px 0;
 }
 
@@ -71,10 +69,9 @@ body {
     line-height: 26px;
     letter-spacing: 0px;
     text-align: center;
-    width: 327px;
-    height: 78px;
     color: #87879d;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    width: 90vw;
 }
 
 .buttons {
@@ -162,17 +159,17 @@ body {
 }
 
 .galery {
-    width: 327px;
-    height: 327px;
+    width: 80vw;
     display: grid;
-    grid-template-columns: repeat(2, 151px);
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 35vw);
+    justify-content: space-between;
+    
 }
 
 .galery img {
-    width: 151px;
-    height: 151px;
+    width: 35vw;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .second-part {
@@ -197,34 +194,33 @@ body {
     line-height: 36px;
     letter-spacing: 0px;
     text-align: center;
-    width: 327px;
+    /* width: 327px; */
     margin-bottom: 20px;
 }
 
 .footer-2 {
     background-image: linear-gradient(#5395a5c8, #5395a5ae), url(./assets/desktop/image-footer.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
+    background-position:top;
+    background-repeat: no-repeat;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     color: #FFFFFF;
+    background-size: cover;
 }
 
 .o2 {
     margin: 70px 0 30px;
 }
 
-.footer-2>h1 {
-    width: 327px;
-    height: 72px;
+.footer-2 > h1 {
+margin-top: 40px;
     font-size: 32px;
     font-weight: 900;
     line-height: 36px;
     letter-spacing: 0px;
     text-align: center;
-    margin: 70px 0;
 }
 
 .text-2 {
@@ -242,9 +238,9 @@ body {
     color: #FFFFFF;
     border-radius: 32px;
     border-style: none;
-    margin-bottom: 30px;
     cursor: pointer;
 }
+
 .download-btn2:hover{
     background-color: #B18BDD;
 }
@@ -258,14 +254,6 @@ body {
     .images-heroes img {
         width: 394px;
         height: 303px
-    }
-
-    .img1 {
-        margin-right: 10px;
-    }
-
-    .img2 {
-        margin-left: 10px;
     }
 
     .head-text {
@@ -285,54 +273,42 @@ body {
         height: 58px;
         margin-right: 10px;
     }
-
-    .text,
-    .text-2 {
-        width: 457px;
-        height: 52px;
-    }
-
+    
     .first-part {
         margin-bottom: 70px;
     }
 
     .galery {
-        grid-template-columns: repeat(4, 151px);
+        width: 90vw;
+        grid-template-columns: repeat(4, 20vw);
         justify-content: space-around;
-        width: 689px;
-        height: 156px;
     }
 
     .galery>img {
-        width: 164px;
-        height: 156px;
+        width: 20vw;
     }
 
     .second-part>h1 {
         font-size: 40px;
         line-height: 44px;
-        width: 445px;
-        height: 88px;
+        width: 55vw;
     }
-
-    .second-part>.text {
-        width: 573px;
-        height: 78px;
+    .head-text{
+        margin: 50px 0 30px;
+    }
+    .text{
+        width: 75vw;
     }
 
     .footer-2>h1 {
         font-size: 40px;
         line-height: 44px;
-        width: 457px
-    }
-
-    .text-2 {
-        width: 573px;
-        height: 52px;
+        width: 60vw;
+        margin: 70px 0 30px;
     }
 
     .download-btn2 {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 }
 
@@ -340,20 +316,17 @@ body {
     .logo{
         margin-top: 100px;
     }
-    .first-part{
-        width: 1440px;
-    }
+
     .middle-text {
         display: block;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 540px;
-        height: 304px;
-        margin: 0 65px;
     }
-
+    .middle-text > .head-text, .middle-text > p{
+        width: 33vw;
+    }
     .first-part>.head-text,
     .first-part>.text,
     .first-part>.buttons {
@@ -365,47 +338,39 @@ body {
         align-items: center;
     }
 
-    .galery {
-        justify-content: space-around;
-        width: 1110px;
-        height: 242px;
+    .second-part > h1{
+        width: 30vw;
     }
-
+    .second-part > p{
+        width: 35vw;
+    }
     .galery>img {
-        width: 255px;
-        height: 242px;
-        margin-left: -50px;
+        width: 20vw;
     }
 
     .footer-2 {
         flex-direction: row;
-        width: 1110px;
-        height: 88px;
-        padding: 100px 0;
         align-items: center;
         display: flex;
-        justify-content: center;
-        width: 1440px;
+        justify-content: space-around;
     }
 
-    .footer-2>h1,
+    .footer-2 > h1,
     .text-2,
     .download-btn2 {
-        margin: 0;
+        margin: 80px 0;
     }
 
     .text-2 {
         text-align: start;
-        width: 350px;
-        height: 78px;
+        width: 20vw;
     }
 
     .footer-2>h1 {
         text-align: start;
-    }
-
-    .download-btn2 {
-        width: 193px;
-        margin-left: 100px;
+        width: 25vw;
     }
 }
+
+
+/* I think there is heroes images problem..
